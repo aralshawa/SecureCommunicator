@@ -13,7 +13,47 @@
 		554270B31CA6D7F600AA2E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554270B11CA6D7F600AA2E34 /* Main.storyboard */; };
 		554270B51CA6D7F600AA2E34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554270B41CA6D7F600AA2E34 /* Assets.xcassets */; };
 		554270B81CA6D7F600AA2E34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554270B61CA6D7F600AA2E34 /* LaunchScreen.storyboard */; };
+		554270D41CA6DA4B00AA2E34 /* EZAudioiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 554270CF1CA6D9D500AA2E34 /* EZAudioiOS.framework */; };
+		554270DC1CA6DBA200AA2E34 /* EZAudioiOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 554270CF1CA6D9D500AA2E34 /* EZAudioiOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		554270CE1CA6D9D500AA2E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554270C91CA6D9D500AA2E34 /* EZAudio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 469F4CF31B749F7800666A46;
+			remoteInfo = EZAudioiOS;
+		};
+		554270D01CA6D9D500AA2E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554270C91CA6D9D500AA2E34 /* EZAudio.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A5A4B9C1BBBDCB200A8A048;
+			remoteInfo = EZAudioOSX;
+		};
+		554270D21CA6DA4600AA2E34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 554270C91CA6D9D500AA2E34 /* EZAudio.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 469F4CF21B749F7800666A46;
+			remoteInfo = EZAudioiOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		554270DB1CA6DB7200AA2E34 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				554270DC1CA6DBA200AA2E34 /* EZAudioiOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		554270A51CA6D7F600AA2E34 /* SecureCommunicator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureCommunicator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +66,7 @@
 		554270B41CA6D7F600AA2E34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		554270B71CA6D7F600AA2E34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554270B91CA6D7F600AA2E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		554270C91CA6D9D500AA2E34 /* EZAudio.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EZAudio.xcodeproj; path = ../_Libraries/EZAudio/EZAudio.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				554270D41CA6DA4B00AA2E34 /* EZAudioiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +84,7 @@
 		5542709C1CA6D7F600AA2E34 = {
 			isa = PBXGroup;
 			children = (
+				554270C91CA6D9D500AA2E34 /* EZAudio.xcodeproj */,
 				554270A71CA6D7F600AA2E34 /* SecureCommunicator */,
 				554270A61CA6D7F600AA2E34 /* Products */,
 			);
@@ -79,6 +122,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		554270CA1CA6D9D500AA2E34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				554270CF1CA6D9D500AA2E34 /* EZAudioiOS.framework */,
+				554270D11CA6D9D500AA2E34 /* EZAudioOSX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,10 +141,12 @@
 				554270A11CA6D7F600AA2E34 /* Sources */,
 				554270A21CA6D7F600AA2E34 /* Frameworks */,
 				554270A31CA6D7F600AA2E34 /* Resources */,
+				554270DB1CA6DB7200AA2E34 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				554270D31CA6DA4600AA2E34 /* PBXTargetDependency */,
 			);
 			name = SecureCommunicator;
 			productName = SecureCommunicator;
@@ -124,12 +178,35 @@
 			mainGroup = 5542709C1CA6D7F600AA2E34;
 			productRefGroup = 554270A61CA6D7F600AA2E34 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 554270CA1CA6D9D500AA2E34 /* Products */;
+					ProjectRef = 554270C91CA6D9D500AA2E34 /* EZAudio.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				554270A41CA6D7F600AA2E34 /* SecureCommunicator */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		554270CF1CA6D9D500AA2E34 /* EZAudioiOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EZAudioiOS.framework;
+			remoteRef = 554270CE1CA6D9D500AA2E34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		554270D11CA6D9D500AA2E34 /* EZAudioOSX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EZAudioOSX.framework;
+			remoteRef = 554270D01CA6D9D500AA2E34 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		554270A31CA6D7F600AA2E34 /* Resources */ = {
@@ -156,6 +233,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		554270D31CA6DA4600AA2E34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EZAudioiOS;
+			targetProxy = 554270D21CA6DA4600AA2E34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		554270B11CA6D7F600AA2E34 /* Main.storyboard */ = {
@@ -263,6 +348,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "~/Documents/Developer/_Libraries/EZAudio";
+				HEADER_SEARCH_PATHS = "~/Documents/Developer/_Libraries/EZAudio";
 				INFOPLIST_FILE = SecureCommunicator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AAAplications.SecureCommunicator;
@@ -274,6 +361,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = "~/Documents/Developer/_Libraries/EZAudio";
+				HEADER_SEARCH_PATHS = "~/Documents/Developer/_Libraries/EZAudio";
 				INFOPLIST_FILE = SecureCommunicator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AAAplications.SecureCommunicator;
@@ -300,6 +389,7 @@
 				554270BE1CA6D7F600AA2E34 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

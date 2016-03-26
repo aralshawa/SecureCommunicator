@@ -1,0 +1,3 @@
+[submodule "EZAudio"]
+	path = EZAudio
+	url = https://github.com/syedhali/EZAudio.git

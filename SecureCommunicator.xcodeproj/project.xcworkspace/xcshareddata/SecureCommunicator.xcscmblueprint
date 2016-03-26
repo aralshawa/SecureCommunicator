@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5B634E15D6F6D620E1B05C53FE11CED0CFD63152",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "5B634E15D6F6D620E1B05C53FE11CED0CFD63152" : 0,
+    "9D6FF97A89F512CD81EAE1A971A1D2EB03E03F7C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "4B0FAB1B-543B-47E9-94A2-C481AF1D3123",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "5B634E15D6F6D620E1B05C53FE11CED0CFD63152" : "SecureCommunicator\/",
+    "9D6FF97A89F512CD81EAE1A971A1D2EB03E03F7C" : "_Libraries\/EZAudio\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SecureCommunicator",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SecureCommunicator.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/aralshawa\/securecommunicator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5B634E15D6F6D620E1B05C53FE11CED0CFD63152"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/syedhali\/EZAudio.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9D6FF97A89F512CD81EAE1A971A1D2EB03E03F7C"
+    }
+  ]
+}

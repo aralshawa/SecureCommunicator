@@ -28,5 +28,13 @@
 // Audio Output
 @property (nonatomic, strong) EZOutput *output;
 
+// Buttons
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
+@property (weak, nonatomic) IBOutlet UIButton *emotion1Btn;
+@property (weak, nonatomic) IBOutlet UIButton *emotion2Btn;
+@property (weak, nonatomic) IBOutlet UIButton *emotion3Btn;
+@property (weak, nonatomic) IBOutlet UIButton *emotion4Btn;
+@property (weak, nonatomic) IBOutlet UISlider *amplitudeSlider;
+
 @end
 

@@ -100,7 +100,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <state key="normal" title="😠"/>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJC-1u-EnV">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RJC-1u-EnV">
                                 <rect key="frame" x="20" y="403" width="167" height="222"/>
                                 <color key="backgroundColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
@@ -148,10 +148,13 @@
                             <constraint firstItem="fgU-J9-2LN" firstAttribute="leading" secondItem="XVJ-1h-hJT" secondAttribute="leadingMargin" constant="-2" id="ACI-1e-8YK"/>
                             <constraint firstItem="gDn-5b-C9g" firstAttribute="top" secondItem="fgU-J9-2LN" secondAttribute="bottom" constant="8" id="ARB-sr-Cbj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="q4v-Ql-Rkf" secondAttribute="trailing" constant="-2" id="ArA-TN-UM0"/>
-                            <constraint firstItem="fgU-J9-2LN" firstAttribute="top" secondItem="5MS-UC-lG1" secondAttribute="bottom" constant="24" id="DPR-f0-rws"/>
+                            <constraint firstItem="fgU-J9-2LN" firstAttribute="top" secondItem="5MS-UC-lG1" secondAttribute="bottom" constant="24" id="DPR-f0-rws">
+                                <variation key="heightClass=regular-widthClass=compact" constant="14"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="fgU-J9-2LN" secondAttribute="trailing" id="ESp-xp-QuW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="RJC-1u-EnV" secondAttribute="trailing" constant="-2" id="EXj-dr-e9C"/>
                             <constraint firstItem="fgU-J9-2LN" firstAttribute="leading" secondItem="CQB-kv-Re2" secondAttribute="trailing" constant="29" id="F2C-7e-Lqa"/>
+                            <constraint firstItem="fgU-J9-2LN" firstAttribute="leading" secondItem="XVJ-1h-hJT" secondAttribute="leadingMargin" constant="-2" id="Fpz-rJ-Z9T"/>
                             <constraint firstItem="Bn4-ch-TMF" firstAttribute="top" secondItem="fgU-J9-2LN" secondAttribute="bottom" constant="20" id="H0U-sf-Gva"/>
                             <constraint firstItem="q4v-Ql-Rkf" firstAttribute="top" secondItem="XVJ-1h-hJT" secondAttribute="topMargin" constant="18" id="Kec-4Z-mAm"/>
                             <constraint firstItem="CQB-kv-Re2" firstAttribute="leading" secondItem="5MS-UC-lG1" secondAttribute="trailing" constant="14" id="N8E-oh-Dhs"/>
@@ -161,7 +164,9 @@
                             <constraint firstItem="RJC-1u-EnV" firstAttribute="width" secondItem="CQB-kv-Re2" secondAttribute="width" id="QYs-6v-QQr"/>
                             <constraint firstAttribute="leadingMargin" secondItem="gDn-5b-C9g" secondAttribute="leading" id="QzL-7J-UX5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="SDB-DO-9hX" secondAttribute="trailing" constant="-2" id="UHh-Ti-NtJ"/>
-                            <constraint firstItem="RJC-1u-EnV" firstAttribute="top" secondItem="CQB-kv-Re2" secondAttribute="bottom" constant="24" id="bhv-gl-VZO"/>
+                            <constraint firstItem="RJC-1u-EnV" firstAttribute="top" secondItem="CQB-kv-Re2" secondAttribute="bottom" constant="24" id="bhv-gl-VZO">
+                                <variation key="heightClass=regular-widthClass=compact" constant="14"/>
+                            </constraint>
                             <constraint firstItem="5MS-UC-lG1" firstAttribute="leading" secondItem="XVJ-1h-hJT" secondAttribute="leadingMargin" constant="-2" id="cJK-80-KUQ"/>
                             <constraint firstItem="RJC-1u-EnV" firstAttribute="height" secondItem="CQB-kv-Re2" secondAttribute="height" id="cwe-SX-7Z0"/>
                             <constraint firstItem="CQB-kv-Re2" firstAttribute="width" secondItem="5MS-UC-lG1" secondAttribute="width" id="dNx-T9-qmn"/>
@@ -203,6 +208,7 @@
                                 <exclude reference="DPR-f0-rws"/>
                                 <exclude reference="ESp-xp-QuW"/>
                                 <exclude reference="F2C-7e-Lqa"/>
+                                <exclude reference="Fpz-rJ-Z9T"/>
                                 <exclude reference="mWU-aU-CzX"/>
                                 <exclude reference="6cc-6c-oa3"/>
                                 <exclude reference="EXj-dr-e9C"/>
@@ -236,6 +242,7 @@
                                 <include reference="2Ya-Yc-2vb"/>
                                 <include reference="ACI-1e-8YK"/>
                                 <include reference="DPR-f0-rws"/>
+                                <include reference="Fpz-rJ-Z9T"/>
                                 <include reference="mWU-aU-CzX"/>
                                 <include reference="6cc-6c-oa3"/>
                                 <include reference="EXj-dr-e9C"/>
